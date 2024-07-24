@@ -1,0 +1,679 @@
+
+/**RESET**/
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/**HEADER**/
+
+header {
+    background-color: black;
+    padding: 20px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+
+header a p:hover {
+    color: orange;
+    border-color: orange;
+}
+
+header a p {
+    font-size: 25px;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.redessociales a img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;  
+}
+
+
+/**MAIN**/
+
+main {
+    background-color: rgba(51, 49, 49, 0.26);
+}
+
+.imgpresentacion img {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    height: auto;
+}
+
+
+.bienvenidos {
+    text-align: center;
+}
+
+.bienvenidos h1 {
+    font-size: 45px;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+}
+
+.bienvenidos p {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+section h2 {
+    font-size: 45px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 15px;
+}
+
+.grilla-productos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr ;
+    align-items: center;
+}
+
+.grilla-productos div {
+    width:350px ;
+    height: 300px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 40px;
+}
+
+.grilla-productos div img {
+    width: 250px;
+    height: 150px;
+}
+
+.grilla-productos div a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+.grilla-productos div h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.presentacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr 1fr;
+    margin-left: 15px;
+    height: 400px;
+    margin-top: 10px;
+}
+
+.presentacion p {
+    font-size: 25px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.jeepicono{
+    width: 60px;
+    height: 50px;
+}
+
+.whatsappicono {
+    width: 60px;
+    height: 40px;
+}
+
+/**FOOTER**/
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    font-size: 15px;
+}
+
+footer img{
+    width: 250px;
+    height: 150px;
+    margin: 15px;
+}
+
+footer a img {
+    width: 100px;
+    height: 80px;
+    margin: 20px;
+}
+
+.valoraciones {
+    font-size: 0;
+    text-align: center;
+}
+
+.valoraciones p {
+    font-size: 20px;  
+    margin: 10px; 
+    padding: 0px;
+}
+
+.valoraciones ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.valoraciones li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.valoraciones li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.valoraciones li a:hover,
+.valoraciones li a:focus,
+.valoraciones li a:active {
+    color:yellow;
+}
+
+
+/*?CONTACTO*/
+
+.mb-3 {
+    background-image: url(../img/jeepformulario.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding: 15px;
+}
+
+form div {
+    padding: 10px;
+}
+
+/*! HISTORIA*/
+
+.historiajeep {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.4fr 1fr;
+}
+
+.historiajeep h1 {
+    font-size: 45px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 15px;
+    grid-column: 1/3;
+}
+
+.historiajeep img {
+    width: 700px;
+    height: 450px;
+}
+
+.historiajeep p {
+    font-size: 21px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*?VEHICULOS*/
+
+.aventura img {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    height: 500px;
+}
+
+.vehiculos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.4fr 1fr 1fr;
+}
+
+.vehiculos h1 {
+    font-size: 45px;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    grid-column: 1/4;
+    text-decoration: underline;
+}
+
+.vehiculos div {
+    width:350px ;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 40px;
+}
+
+.vehiculos div img {
+    width: 250px;
+    height: 150px;
+}
+
+.vehiculos div a {
+    text-decoration: none;
+    background-color: rgba(255, 255, 0, 0.699);
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.vehiculos div h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.descripcionmodelos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr 1fr;
+    margin-left: 10px;
+
+}
+
+.modelos img {
+    width: 280px;
+    height: 180px;
+    padding: 5px;
+}
+
+.modelos-title h2 {
+    font-size: 40px;
+}
+
+.modelos-title p {
+    font-size: 20px;
+    margin: 15px;
+}
+
+/*! PLANES DE AHORRO*/
+
+.jeepahorro img {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    height: 500px;
+}
+
+.tarjetasplan {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjetasplan div {
+    width:350px ;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 40px;
+}
+
+.tarjetasplan div img {
+    width: 250px;
+    height: 150px;
+}
+
+.tarjetasplan div a {
+    text-decoration: none;
+    background-color: rgba(255, 255, 0, 0.699);
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.tarjetasplan div h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*? MEDIA QUERIES INDEX*/
+
+
+@media (max-width: 1240px) 
+{   .grilla-productos  {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 400px;
+        margin-bottom: 30px;
+        align-items: center;
+}
+    .productos h2 {
+        grid-column: 1/3;
+    }
+
+    .presentacion p {
+        font-size: 22px;
+    }
+
+    .whatsapp {
+        display:none
+    }
+}
+
+@media (max-width: 1189px){
+
+    .presentacion {
+        height: 350px;
+    }
+    .presentacion p {
+        font-size: 20px;
+    }
+    .presentacion iframe {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 1022px) {
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+    .presentacion p {
+        margin-top: 20px;
+        text-align: center;
+        margin: 18px;
+    }
+    
+}
+
+
+@media (max-width: 935px) {
+    .presentacion iframe {
+        width: 400px;
+        height: 250px;
+    }
+
+    .presentacion p {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 895px) {
+
+    .grilla-productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    footer img {
+        width: 200px;
+        height: 100px;
+        }
+    }
+
+@media (max-width: 847px) {
+    .bienvenidos h1 {
+        font-size: 35px;
+    }
+
+    .productos h2 {
+        font-size: 30px;
+    }
+    
+    .bienvenidos p {
+        font-size: 20px;
+    }
+
+    .productos div h3 {
+        font-size: 20px;
+    }
+
+    footer img {
+        width: 150px;
+        height: 70px;
+    }
+
+    footer h2 {
+        font-size: 22px;
+    }
+
+    footer a img {
+        width: 70px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 723px) {
+    header a p {
+        font-size: 12px;
+        }
+    section h2 {
+        font-size: 35px;
+        }
+
+    footer h2 {
+        font-size: 13px;
+        }
+
+    footer p {
+        font-size: 10px;
+        }
+
+    footer img {
+        width: 120px;
+        height: 50px;
+        }
+
+    .valoraciones p {
+        font-size: 13px;
+        }
+
+    .bienvenidos h1 {
+        font-size: 25px;
+        }
+    }
+
+    @media (max-width: 555px){
+
+    .redessociales {
+        display: flex;
+        flex-direction: column;
+        }
+
+    .atencionyvaloracion {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        }
+    
+    .bienvenidos h1 {
+        font-size: 25px;
+    }
+
+    .bienvenidos p {
+        font-size: 15px;
+    }
+
+    .presentacion iframe {
+        width: 80%;
+    }
+
+    .presentacion p {
+        font-size: 15px;
+    }
+    }
+
+    @media (max-width: 490px){
+
+    header img  {
+        width: 150px;
+        }
+
+    .redessociales a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bienvenidos h1 {
+        font-size: 16px;
+    }
+
+    .bienvenidos p {
+        font-size: 13px;
+    }
+
+    .productos h2 {
+        font-size: 23px;
+    }
+
+    footer img {
+        width: 100px;
+        height: 40px;
+        }
+    }
+
+    @media (max-width: 428px){
+        header a p {
+            display: none;
+            }
+    }
+
+    @media (max-width: 384px){
+        header img {
+            width: 120px;
+        }
+
+        .grilla-productos div {
+            width: 290px;
+            height: 250px;
+            margin: 20px;
+        }
+    }
+
+    /*? MEDIA QUERIES VEHICULOS*/
+
+    @media (max-width: 1075px){
+        .aventura img{
+            height: auto;
+        }
+
+        
+        .vehiculos {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 400px;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+
+        .vehiculos h1 {
+            grid-column: 1/3;
+
+        }
+
+        .modelos img {
+            width: 200px;
+            height: 150px;
+        }
+
+        .modelos-title h2 {
+            font-size: 30px;
+        }
+
+        .modelos-title p {
+            font-size: 15px;
+        }
+
+    }
+
+    @media (max-width: 819px){
+        .descripcionmodelos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modelos img {
+            width: 280px;
+            height: 180px;
+        }
+
+        .vehiculos {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    @media (max-width: 579px){
+        .modelos img {
+            width: 200px;
+            height: 120px;
+        }
+
+        .vehiculos h1 {
+            font-size: 30px;
+        }
+
+    }
+    @media (max-width: 415px) {
+        .modelos img {
+            width: 150px;
+            height: 90px;
+        }
+    }
