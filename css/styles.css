@@ -24,12 +24,6 @@ header img {
     height: auto;
 }
 
-
-header a p:hover {
-    color: orange;
-    border-color: orange;
-}
-
 header a p {
     font-size: 25px;
     color: white;
@@ -40,11 +34,12 @@ header a p {
     margin-bottom: 30px;
 }
 
-.redessociales a img{
-    width: 50px;
-    height: 50px;
-    margin: 10px;  
+header a p:hover {
+    color: orange;
+    border-color: orange;
 }
+
+
 
 
 /**MAIN**/
@@ -80,7 +75,7 @@ main {
 }
 
 
-section h2 {
+.productos h2 {
     font-size: 45px;
     padding: 15px;
     margin: 20px;
@@ -100,7 +95,6 @@ section h2 {
 .grilla-productos div {
     width:350px ;
     height: 300px;
-    border: 2px solid black;
     text-align: center;
     margin: 40px;
 }
@@ -108,6 +102,11 @@ section h2 {
 .grilla-productos div img {
     width: 250px;
     height: 150px;
+}
+
+.grilla-productos div h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .grilla-productos div a {
@@ -118,13 +117,6 @@ section h2 {
     border-radius: 15px;
 }
 
-
-.grilla-productos div h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-
 .presentacion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -134,10 +126,10 @@ section h2 {
     margin-top: 10px;
 }
 
+
 .presentacion p {
-    font-size: 25px;
+    font-size: 22px;
     margin-right: 15px;
-    margin-bottom: 25px;
 }
 
 .whatsapp {
@@ -168,37 +160,31 @@ footer {
     align-items: center;
 }
 
-footer h2 {
-    font-size: 30px;
-    text-align: center;
-}
-
-footer p {
-    text-align: center;
-    font-size: 15px;
-}
-
 footer img{
     width: 250px;
     height: 150px;
     margin: 15px;
 }
 
-footer a img {
-    width: 100px;
-    height: 80px;
-    margin: 20px;
+.atencion h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.atencion p {
+    font-size: 15px;
+    text-align: center; 
 }
 
 .valoraciones {
-    font-size: 0;
+    font-size: 15px;
     text-align: center;
 }
 
 .valoraciones p {
     font-size: 20px;  
-    margin: 10px; 
-    padding: 0px;
+    margin: 5px; 
+    text-align: center;
 }
 
 .valoraciones ul{
@@ -216,58 +202,23 @@ footer a img {
     text-decoration: none;
     font-size: 20px;
     color: white;
+    
 }
 
-.valoraciones li a:hover,
-.valoraciones li a:focus,
-.valoraciones li a:active {
+.valoraciones li a:hover{
     color:yellow;
 }
 
-
-/*?CONTACTO*/
-
-.mb-3 {
-    background-image: url(../img/jeepformulario.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    padding: 15px;
-}
-
-form div {
-    padding: 10px;
-}
-
-/*! HISTORIA*/
-
-.historiajeep {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.4fr 1fr;
-}
-
-.historiajeep h1 {
-    font-size: 45px;
-    padding: 15px;
+footer a img {
+    width: 100px;
+    height: 80px;
     margin: 20px;
-    text-align: center;
-    text-decoration: underline;
-    padding-bottom: 15px;
-    grid-column: 1/3;
 }
 
-.historiajeep img {
-    width: 700px;
-    height: 450px;
-}
-
-.historiajeep p {
-    font-size: 21px;
-    margin: 10px;
-    padding: 10px;
+.redessociales a img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;  
 }
 
 /*?VEHICULOS*/
@@ -308,17 +259,17 @@ form div {
     height: 150px;
 }
 
+.vehiculos div h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
 .vehiculos div a {
     text-decoration: none;
     background-color: rgba(255, 255, 0, 0.699);
     color: black;
     padding: 15px;
     border-radius: 15px;
-}
-
-.vehiculos div h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
 }
 
 .descripcionmodelos {
@@ -354,8 +305,19 @@ form div {
 }
 
 .tarjetasplan {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 0.4fr 1fr;
+    padding-bottom: 45px;
+}
+
+.tarjetasplan h1 {
+    font-size: 45px;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    grid-column: 1/3;
+    background-color: rgba(0, 0, 0, 0.164);
 }
 
 .tarjetasplan div {
@@ -383,6 +345,73 @@ form div {
     font-size: 30px;
     margin-bottom: 20px;
 }
+
+.tipodeplan h2 {
+    font-size: 30px;
+    padding: 5px;
+}
+
+.tipodeplan p {
+    font-size: 18px;
+}
+
+/*?CONTACTO*/
+
+.mb-3 {
+    background-image: url(../img/jeepformulario.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding: 25px;
+}
+
+form div {
+    padding: 10px;
+}
+
+/*! HISTORIA*/
+
+.historiajeep {
+    background-image: url(../img/jeephistoria.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr;
+}
+
+.historiajeep h1 {
+    font-size: 45px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.historiajeep h2 {
+    font-size: 45px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.historiajeep p {
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+
 
 /*? MEDIA QUERIES INDEX*/
 

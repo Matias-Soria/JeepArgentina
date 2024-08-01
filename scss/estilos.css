@@ -1,0 +1,688 @@
+/**RESET**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/**VARIABLES**/
+main {
+  background-color: rgba(51, 49, 49, 0.26);
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.jeepicono {
+  width: 60px;
+  height: 50px;
+}
+
+.whatsappicono {
+  width: 60px;
+  height: 40px;
+}
+
+/*?HEADER DE INDEX + PAGES*/
+header {
+  background-color: black;
+  padding: 20px;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+header img {
+  width: 250px;
+  height: auto;
+}
+header a p {
+  font-size: 25px;
+  color: white;
+  border: 2px solid white;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+header a p:hover {
+  color: orange;
+  border-color: orange;
+}
+header .navbar {
+  background-color: black !important;
+}
+header .navbar .container-fluid .navbar-toggler {
+  background-color: white !important;
+}
+header .navbar .container-fluid ul li a {
+  font-size: 20px !important;
+  color: white !important;
+}
+
+/*! MAIN DEL INDEX*/
+main .imgpresentacion img {
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  height: auto;
+}
+main .bienvenidos {
+  text-align: center;
+}
+main .bienvenidos h1 {
+  font-size: 45px;
+  padding: 15px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.164);
+}
+main .bienvenidos p {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+main .productos h2 {
+  font-size: 45px;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.164);
+  padding-bottom: 15px;
+}
+main .grilla-productos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+main .grilla-productos div {
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  margin: 40px;
+}
+main .grilla-productos div img {
+  width: 250px;
+  height: 150px;
+}
+main .grilla-productos div h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+main .grilla-productos div a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+main .presentacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto auto;
+  height: 550px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+main .presentacion h2 {
+  font-size: 45px;
+  padding: 25px;
+  margin: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.164);
+  grid-column: 1/3;
+}
+main .presentacion p {
+  font-size: 22px;
+  margin-right: 15px;
+}
+main .whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+main .whatsapp .jeepicono {
+  width: 60px;
+  height: 50px;
+}
+main .whatsapp .whatsappicono {
+  width: 60px;
+  height: 40px;
+}
+
+/*! MAIN DE VEHICULOS*/
+main .aventura img {
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  height: 500px;
+}
+main .vehiculos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.4fr 1fr 1fr;
+}
+main .vehiculos h1 {
+  font-size: 45px;
+  text-align: center;
+  padding: 15px;
+  margin: 20px;
+  grid-column: 1/4;
+  background-color: rgba(0, 0, 0, 0.336);
+}
+main .vehiculos div {
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin: 40px;
+}
+main .vehiculos div img {
+  width: 250px;
+  height: 150px;
+}
+main .vehiculos div h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+main .vehiculos div a {
+  text-decoration: none;
+  background-color: rgba(255, 255, 0, 0.699);
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+}
+main .descripcionmodelos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr 1fr;
+  margin-left: 10px;
+}
+main .descripcionmodelos .modelos img {
+  width: 280px;
+  height: 180px;
+  padding: 5px;
+}
+main .descripcionmodelos .modelos-title h2 {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+}
+main .descripcionmodelos .modelos-title p {
+  font-size: 20px;
+  margin: 15px;
+}
+
+/*? MAIN PLANES DE AHORRO*/
+main .jeepahorro img {
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  height: 500px;
+}
+main .tarjetasplan {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 0.4fr 1fr;
+  padding-bottom: 45px;
+}
+main .tarjetasplan h1 {
+  font-size: 45px;
+  text-align: center;
+  padding: 15px;
+  margin: 20px;
+  grid-column: 1/3;
+  background-color: rgba(0, 0, 0, 0.164);
+}
+main .tarjetasplan div {
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin: 40px;
+}
+main .tarjetasplan div img {
+  width: 250px;
+  height: 150px;
+}
+main .tarjetasplan div h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+main .tarjetasplan div a {
+  text-decoration: none;
+  background-color: rgba(255, 255, 0, 0.699);
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+}
+main .tarjetasplan .tipodeplan h2 {
+  font-size: 30px;
+  padding: 5px;
+  text-decoration: underline;
+}
+main .tarjetasplan .tipodeplan p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/*! MAIN DE CONTACTO*/
+main .formulario {
+  background-image: url(../img/jeepformulario.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  padding: 25px;
+}
+main .formulario h1 {
+  font-size: 45px;
+  text-align: center;
+  padding: 15px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.336);
+}
+main form div {
+  padding: 5px;
+}
+
+/*? MAIN DE HISTORIA*/
+main .jeephistoria img {
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  height: auto;
+}
+main .jeephistoria h1 {
+  font-size: 45px;
+  text-align: center;
+  padding: 15px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.336);
+}
+main .jeephistoria p {
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+main .jeephistoria .historiaimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .jeephistoria .historiaimg img {
+  width: 450px;
+  height: 260px;
+  padding: 10px;
+}
+main .jeephistoria h2 {
+  font-size: 45px;
+  text-align: center;
+  padding: 15px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.336);
+}
+
+/*$ FOOTER INDEX + PAGES*/
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer img {
+  width: 250px;
+  height: 150px;
+  margin: 15px;
+}
+footer div .atencion h2 {
+  font-size: 30px;
+  text-align: center;
+}
+footer div .atencion p {
+  font-size: 15px;
+  text-align: center;
+}
+footer div .valoraciones {
+  font-size: 15px;
+  text-align: center;
+}
+footer div .valoraciones p {
+  font-size: 20px;
+  margin: 5px;
+  text-align: center;
+}
+footer div .valoraciones ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer div .valoraciones ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+footer div .valoraciones ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+footer div .valoraciones ul li a:hover {
+  color: yellow;
+}
+footer a img {
+  width: 100px;
+  height: 80px;
+  margin: 20px;
+}
+footer .redessociales a img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+/*! MEDIA QUERYS DE INDEX*/
+@media (max-width: 1075px) {
+  main .productos .grilla-productos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 400px;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  main .productos .productos h2 {
+    grid-column: 1/3;
+  }
+  main .productos .presentacion p {
+    font-size: 15px;
+  }
+  main .presentacion {
+    height: 450px;
+  }
+  main .presentacion iframe {
+    width: 400px;
+    height: 250px;
+  }
+  main .presentacion h2 {
+    font-size: 33px;
+  }
+  main .presentacion p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  main .whatsapp {
+    display: none;
+  }
+}
+@media (max-width: 883px) {
+  main .presentacion iframe {
+    width: 370px;
+    height: 230px;
+  }
+  main .presentacion p {
+    font-size: 14px;
+  }
+  footer img {
+    width: 180px;
+    height: 90px;
+  }
+  footer div .atencion h2 {
+    font-size: 22px;
+  }
+  footer div .atencion p {
+    font-size: 12px;
+  }
+  footer div .valoraciones p {
+    font-size: 17px;
+  }
+  footer a img {
+    width: 70px;
+    height: 60px;
+  }
+}
+@media (max-width: 787px) {
+  main .bienvenidos h1 {
+    font-size: 30px;
+  }
+  main .bienvenidos p {
+    font-size: 15px;
+  }
+  main .productos h2 {
+    font-size: 30px;
+  }
+  main .grilla-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .presentacion {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .presentacion h2 {
+    font-size: 25px;
+  }
+  main .presentacion iframe {
+    width: 60%;
+    height: 60%;
+  }
+  main .presentacion p {
+    font-size: 12px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 617px) {
+  header img {
+    width: 135px;
+  }
+  header a p {
+    font-size: 13px;
+  }
+  main .bienvenidos h1 {
+    font-size: 19px;
+  }
+  main .bienvenidos p {
+    font-size: 12px;
+  }
+  main .productos h2 {
+    font-size: 19px;
+  }
+  main .presentacion h2 {
+    font-size: 16px;
+  }
+  footer img {
+    width: 80px;
+    height: 50px;
+  }
+  footer div .atencion h2 {
+    font-size: 16px;
+  }
+  footer div .atencion p {
+    font-size: 10px;
+  }
+  footer div .valoraciones p {
+    font-size: 12px;
+  }
+  footer a img {
+    width: 40px;
+    height: 35px;
+  }
+  footer .redessociales {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer .redessociales a img {
+    width: 40px;
+    height: 35px;
+  }
+}
+/*! MEDIA QUERYS DE VEHICULOS*/
+@media (max-width: 1075px) {
+  main .aventura img {
+    height: auto;
+  }
+  main .vehiculos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 400px;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  main .vehiculos h1 {
+    grid-column: 1/3;
+  }
+  main .descripcionmodelos .modelos img {
+    width: 200px;
+    height: 150px;
+  }
+  main .descripcionmodelos .modelos-title h2 {
+    font-size: 30px;
+  }
+  main .descripcionmodelos .modelos-title p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media (max-width: 843px) {
+  main .vehiculos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .descripcionmodelos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  main .descripcionmodelos .modelos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  main .descripcionmodelos .modelos img {
+    width: 280px;
+    height: 180px;
+  }
+}
+@media (max-width: 579px) {
+  main .vehiculos h1 {
+    font-size: 30px;
+  }
+  main .descripcionmodelos .modelos img {
+    width: 200px;
+    height: 130px;
+  }
+}
+@media (max-width: 415px) {
+  main .descripcionmodelos .modelos img {
+    width: 150px;
+    height: 90px;
+  }
+}
+/*! MEDIA QUERYS DE PLANES DE AHORRO*/
+@media (max-width: 1008px) {
+  main .jeepahorro img {
+    height: auto;
+  }
+  main .tarjetasplan h1 {
+    font-size: 32px;
+  }
+  main .tarjetasplan .tipodeplan h2 {
+    font-size: 25px;
+  }
+  main .tarjetasplan .tipodeplan p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 842px) {
+  main .tarjetasplan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .tarjetasplan h1 {
+    font-size: 25px;
+  }
+  main .tarjetasplan div {
+    width: 280px;
+    height: 180px;
+  }
+}
+@media (max-width: 664px) {
+  main .tarjetasplan h1 {
+    font-size: 20px;
+  }
+  main .tarjetasplan .tipodeplan h2 {
+    font-size: 20px;
+  }
+  main .tarjetasplan .tipodeplan p {
+    font-size: 13px;
+  }
+}
+/*! MEDIA QUERYS DE CONTACTO*/
+@media (max-width: 906px) {
+  main .formulario h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 644px) {
+  main .formulario h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 472px) {
+  main .formulario h1 {
+    font-size: 13px;
+  }
+}
+/*! MEDIA QUERYS DE HISTORIA*/
+@media (max-width: 1008px) {
+  main .jeephistoria img {
+    height: auto;
+  }
+  main .jeephistoria h1 {
+    font-size: 30px;
+  }
+  main .jeephistoria p {
+    font-size: 20px;
+  }
+  main .jeephistoria .historiaimg {
+    flex-direction: column;
+  }
+  main .jeephistoria .historiaimg img {
+    width: 80%;
+    height: 80%;
+  }
+}
+@media (max-width: 794px) {
+  main .jeephistoria h1 {
+    font-size: 20px;
+  }
+  main .jeephistoria p {
+    font-size: 15px;
+  }
+  main .jeephistoria h2 {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

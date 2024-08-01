@@ -1,0 +1,52 @@
+/*?HEADER DE INDEX + PAGES*/
+
+header {
+    background-color: black;
+    padding: 20px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    img {
+        width: 250px;
+        height: auto;
+    }
+
+    a {
+        p {
+            font-size: 25px;
+            color: white;
+            border: 2px solid white;
+            padding: 5px;
+            display: inline-block;
+            text-align: center;
+            margin-bottom: 30px;
+
+            &:hover {
+                color: orange;
+                border-color: orange;
+            }
+        }
+    }
+
+    .navbar {
+        background-color: black !important;
+
+        .container-fluid {
+            .navbar-toggler {
+                background-color: white !important;
+            }
+
+            ul {
+                li {
+                    a {
+                        font-size: 20px !important;
+                        color: white !important;
+                    }
+                }
+            }
+        }
+    }
+}
