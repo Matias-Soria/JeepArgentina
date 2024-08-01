@@ -331,9 +331,7 @@ main {
         }
 
         .historiaimg {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, center, center);
 
             img {
                 width: 450px;

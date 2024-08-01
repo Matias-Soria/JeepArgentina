@@ -6,7 +6,6 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-/**VARIABLES**/
 main {
   background-color: rgba(51, 49, 49, 0.26);
 }
@@ -394,7 +393,6 @@ footer .redessociales a img {
   margin: 10px;
 }
 
-/*! MEDIA QUERYS DE INDEX*/
 @media (max-width: 1075px) {
   main .productos .grilla-productos {
     grid-template-columns: repeat(2, 1fr);
@@ -534,7 +532,6 @@ footer .redessociales a img {
     height: 35px;
   }
 }
-/*! MEDIA QUERYS DE VEHICULOS*/
 @media (max-width: 1075px) {
   main .aventura img {
     height: auto;
@@ -599,7 +596,6 @@ footer .redessociales a img {
     height: 90px;
   }
 }
-/*! MEDIA QUERYS DE PLANES DE AHORRO*/
 @media (max-width: 1008px) {
   main .jeepahorro img {
     height: auto;
@@ -640,7 +636,6 @@ footer .redessociales a img {
     font-size: 13px;
   }
 }
-/*! MEDIA QUERYS DE CONTACTO*/
 @media (max-width: 906px) {
   main .formulario h1 {
     font-size: 30px;
@@ -656,8 +651,7 @@ footer .redessociales a img {
     font-size: 13px;
   }
 }
-/*! MEDIA QUERYS DE HISTORIA*/
-@media (max-width: 1008px) {
+@media (max-width: 1075px) {
   main .jeephistoria img {
     height: auto;
   }
