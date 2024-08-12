@@ -27,6 +27,8 @@ header {
             &:hover {
                 color: orange;
                 border-color: orange;
+                transition: 0.5s;
+                transform: scale(1.1);
             }
         }
     }
@@ -44,6 +46,11 @@ header {
                     a {
                         font-size: 20px !important;
                         color: white !important;
+                        &:hover {
+                            color: orange !important;
+                            transition: 0.5s;
+                            transform: scale(1.05);
+                        }
                     }
                 }
             }

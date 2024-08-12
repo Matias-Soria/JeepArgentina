@@ -54,6 +54,8 @@ header a p {
 header a p:hover {
   color: orange;
   border-color: orange;
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 header .navbar {
   background-color: black !important;
@@ -64,6 +66,11 @@ header .navbar .container-fluid .navbar-toggler {
 header .navbar .container-fluid ul li a {
   font-size: 20px !important;
   color: white !important;
+}
+header .navbar .container-fluid ul li a:hover {
+  color: orange !important;
+  transition: 0.5s;
+  transform: scale(1.05);
 }
 
 /*! MAIN DEL INDEX*/
@@ -81,6 +88,7 @@ main .bienvenidos h1 {
   padding: 15px;
   margin: 20px;
   background-color: rgba(0, 0, 0, 0.164);
+  animation-delay: 1s;
 }
 main .bienvenidos p {
   font-size: 20px;
@@ -94,6 +102,7 @@ main .productos h2 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.164);
   padding-bottom: 15px;
+  animation-delay: 10s;
 }
 main .grilla-productos {
   width: 100%;
@@ -107,6 +116,10 @@ main .grilla-productos div {
   height: 300px;
   text-align: center;
   margin: 40px;
+  transition: 1s;
+}
+main .grilla-productos div:hover {
+  transform: scale(1.1);
 }
 main .grilla-productos div img {
   width: 250px;
@@ -122,6 +135,10 @@ main .grilla-productos div a {
   color: white;
   padding: 15px;
   border-radius: 15px;
+  transition: 0.5s;
+}
+main .grilla-productos div a:hover {
+  background-color: rgba(255, 166, 0, 0.507);
 }
 main .presentacion {
   display: grid;
@@ -186,6 +203,10 @@ main .vehiculos div {
   text-align: center;
   margin-bottom: 20px;
   margin: 40px;
+  transition: 1s;
+}
+main .vehiculos div:hover {
+  transform: scale(1.1);
 }
 main .vehiculos div img {
   width: 250px;
@@ -201,6 +222,10 @@ main .vehiculos div a {
   color: black;
   padding: 15px;
   border-radius: 15px;
+  transition: 0.5s;
+}
+main .vehiculos div a:hover {
+  background-color: orangered;
 }
 main .descripcionmodelos {
   display: grid;
@@ -211,7 +236,11 @@ main .descripcionmodelos {
 main .descripcionmodelos .modelos img {
   width: 280px;
   height: 180px;
-  padding: 5px;
+  padding: 7px;
+  transition: 1s;
+}
+main .descripcionmodelos .modelos img:hover {
+  transform: scale(1.1);
 }
 main .descripcionmodelos .modelos-title h2 {
   font-size: 40px;
@@ -250,6 +279,10 @@ main .tarjetasplan div {
   text-align: center;
   margin-bottom: 20px;
   margin: 40px;
+  transition: 1s;
+}
+main .tarjetasplan div:hover {
+  transform: scale(1.1);
 }
 main .tarjetasplan div img {
   width: 250px;
@@ -265,15 +298,31 @@ main .tarjetasplan div a {
   color: black;
   padding: 15px;
   border-radius: 15px;
+  transition: 0.5s;
+}
+main .tarjetasplan div a:hover {
+  background-color: orangered;
+}
+main .tarjetasplan .tipodeplan {
+  background-color: black;
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0px;
 }
 main .tarjetasplan .tipodeplan h2 {
-  font-size: 30px;
+  font-size: 23px;
   padding: 5px;
   text-decoration: underline;
+  color: white;
+  margin: 0px;
 }
 main .tarjetasplan .tipodeplan p {
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
+  color: white;
+  padding: 5px;
+  margin: 0px;
 }
 
 /*! MAIN DE CONTACTO*/
@@ -298,36 +347,43 @@ main form div {
 }
 
 /*? MAIN DE HISTORIA*/
-main .jeephistoria img {
+.maindehistoria {
+  background-color: white;
+}
+.maindehistoria .jeephistoria img {
   width: 100%;
   margin-top: 0;
   padding: 0;
   height: auto;
 }
-main .jeephistoria h1 {
+.maindehistoria .jeephistoria h1 {
   font-size: 45px;
   text-align: center;
   padding: 15px;
   margin: 20px;
   background-color: rgba(0, 0, 0, 0.336);
 }
-main .jeephistoria p {
+.maindehistoria .jeephistoria p {
   font-size: 25px;
   margin: 10px;
   padding: 10px;
   text-align: center;
 }
-main .jeephistoria .historiaimg {
+.maindehistoria .jeephistoria .historiaimg {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .jeephistoria .historiaimg img {
+.maindehistoria .jeephistoria .historiaimg img {
   width: 450px;
   height: 260px;
   padding: 10px;
+  transition: 1s;
 }
-main .jeephistoria h2 {
+.maindehistoria .jeephistoria .historiaimg img:hover {
+  transform: scale(1.03);
+}
+.maindehistoria .jeephistoria h2 {
   font-size: 45px;
   text-align: center;
   padding: 15px;
@@ -386,11 +442,19 @@ footer a img {
   width: 100px;
   height: 80px;
   margin: 20px;
+  transition: 1s;
+}
+footer a img:hover {
+  transform: scale(1.1);
 }
 footer .redessociales a img {
   width: 50px;
   height: 50px;
   margin: 10px;
+  transition: 1s;
+}
+footer .redessociales a img:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 1075px) {
@@ -452,6 +516,9 @@ footer .redessociales a img {
   }
 }
 @media (max-width: 787px) {
+  header a p {
+    font-size: 15px;
+  }
   main .bienvenidos h1 {
     font-size: 30px;
   }
@@ -468,7 +535,7 @@ footer .redessociales a img {
     align-items: center;
   }
   main .presentacion {
-    height: 600px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -488,7 +555,7 @@ footer .redessociales a img {
 }
 @media (max-width: 617px) {
   header img {
-    width: 135px;
+    width: 175px;
   }
   header a p {
     font-size: 13px;
@@ -500,7 +567,7 @@ footer .redessociales a img {
     font-size: 12px;
   }
   main .productos h2 {
-    font-size: 19px;
+    font-size: 20px;
   }
   main .presentacion h2 {
     font-size: 16px;
@@ -530,6 +597,14 @@ footer .redessociales a img {
   footer .redessociales a img {
     width: 40px;
     height: 35px;
+  }
+}
+@media (max-width: 530px) {
+  header a {
+    display: none;
+  }
+  header .navbar .container-fluid ul li a {
+    font-size: 15px !important;
   }
 }
 @media (max-width: 1075px) {
@@ -603,12 +678,6 @@ footer .redessociales a img {
   main .tarjetasplan h1 {
     font-size: 32px;
   }
-  main .tarjetasplan .tipodeplan h2 {
-    font-size: 25px;
-  }
-  main .tarjetasplan .tipodeplan p {
-    font-size: 15px;
-  }
 }
 @media (max-width: 842px) {
   main .tarjetasplan {
@@ -620,17 +689,17 @@ footer .redessociales a img {
   main .tarjetasplan h1 {
     font-size: 25px;
   }
-  main .tarjetasplan div {
-    width: 280px;
-    height: 180px;
-  }
 }
 @media (max-width: 664px) {
   main .tarjetasplan h1 {
     font-size: 20px;
   }
+  main .tarjetasplan .tipodeplan {
+    width: 320px;
+    height: 270px;
+  }
   main .tarjetasplan .tipodeplan h2 {
-    font-size: 20px;
+    font-size: 21px;
   }
   main .tarjetasplan .tipodeplan p {
     font-size: 13px;

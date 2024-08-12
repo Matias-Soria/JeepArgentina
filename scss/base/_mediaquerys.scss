@@ -92,6 +92,15 @@
 }
 
 @media (max-width: 787px) {
+
+    header {
+        a {
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
     main {
         .bienvenidos {
             h1 {
@@ -117,7 +126,7 @@
         }
 
         .presentacion {
-            height: 600px;
+            height: 550px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -143,7 +152,7 @@
 @media (max-width: 617px) {
     header {
         img {
-            width: 135px;
+            width: 175px;
         }
 
         a {
@@ -166,7 +175,7 @@
 
         .productos {
             h2 {
-                font-size: 19px;
+                font-size: 20px;
             }
         }
 
@@ -218,6 +227,26 @@
                 img {
                     width: 40px;
                     height: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    header {
+        a {
+            display: none;
+        }
+
+        .navbar {
+            .container-fluid {
+                ul {
+                    li {
+                        a {
+                            font-size: 15px !important;
+                        }
+                    }
                 }
             }
         }
@@ -342,16 +371,6 @@
             h1 {
                 font-size: 32px;
             }
-
-            .tipodeplan {
-                h2 {
-                    font-size: 25px;
-                }
-
-                p {
-                    font-size: 15px;
-                }
-            }
         }
     }
 }
@@ -368,11 +387,6 @@
             h1 {
                 font-size: 25px;
             }
-
-            div {
-                width: 280px;
-                height: 180px;
-            }
         }
     }
 }
@@ -386,8 +400,11 @@
             }
 
             .tipodeplan {
+                width: 320px;
+                height: 270px;
+
                 h2 {
-                    font-size: 20px;
+                    font-size: 21px;
                 }
 
                 p {
@@ -395,6 +412,7 @@
                 }
             }
         }
+
     }
 }
 
