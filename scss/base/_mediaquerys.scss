@@ -453,8 +453,8 @@
 
 //*! MEDIA QUERYS DE HISTORIA*/
 
-@media (max-width: 1075px) {
-    main {
+@media (max-width: 1181px) {
+    .maindehistoria {
         .jeephistoria {
             img {
                 height: auto;
@@ -481,7 +481,7 @@
 }
 
 @media (max-width: 794px) {
-    main {
+    .maindehistoria {
         .jeephistoria {
             h1 {
                 font-size: 20px;

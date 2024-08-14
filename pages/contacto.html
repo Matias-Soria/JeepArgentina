@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta name="description"
         content="Descubre nuestra amplia gama de vehículos Jeep en Argentina. Encuentra modelos como Wrangler, Cherokee, y más, con ofertas exclusivas y financiación accesible. ¡Tu aventura Jeep comienza aquí!">
@@ -54,36 +55,47 @@
     <main>
         <section class="formulario">
             <h1>CONTACTANOS COMPLETANDO TUS DATOS</h1>
-            <form>
-                <div class="mb-3">
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre">
-                    </div>
-                    <div>
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" name="apellido" id="apellido">
-                    </div>
-                    <div>
-                        <label for="Usuario">Usuario:</label>
-                        <input type="text" name="Usuario" id="Usuario">
-                    </div>
-                    <label for="exampleInputEmail1" class="form-label">Email </label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre">
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class="col-md-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido">
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPhone" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="inputPhone" name="telefono">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
             </form>
             <div class="whatsapp">
                 <img class="jeepicono" src="../img/jeepicono.png" alt="">
-                <a href="https://web.whatsapp.com/" target="_blank"><img class="whatsappicono" src="../img/whatsapp.png"alt=""></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img class="whatsappicono" src="../img/whatsapp.png"
+                        alt=""></a>
             </div>
         </section>
 
@@ -94,7 +106,7 @@
             <a href="https://web.whatsapp.com/" target="_blank"><img class="whatsappicono" src="../img/whatsapp.png"
                     alt="imagen flotante logo whatsapp para redireccionar a los clientes al celular de la empresa"></a>
         </div>
-    
+
     </main>
 
     <footer>
@@ -133,4 +145,5 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

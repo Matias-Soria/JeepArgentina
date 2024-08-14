@@ -48,47 +48,47 @@ footer {
                     display: inline-block;
                     margin-right: 5px;
 
-                a {
-                    text-decoration: none;
-                    font-size: 20px;
-                    color: white;
-                    &:hover {
-                        color:yellow;
+                    a {
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: white;
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: yellow;
+                        }
                     }
                 }
             }
-
         }
     }
-}
 
-a {
-    img {
-        width: 100px;
-        height: 80px;
-        margin: 20px;
-        transition: 1s;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-}
-
-.redessociales {
     a {
         img {
-            width: 50px;
-            height: 50px;
-            margin: 10px;
+            width: 100px;
+            height: 80px;
+            margin: 20px;
             transition: 1s;
 
             &:hover {
-                transform: scale(1.1);
+                transform: scale(1.2);
             }
         }
     }
 
-}
-}
+    .redessociales {
+        a {
+            img {
+                width: 50px;
+                height: 50px;
+                margin: 10px;
+                transition: 1s;
 
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+    }
+}
